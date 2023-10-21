@@ -1,4 +1,4 @@
-Here is collection of builds that were not published or were removed via git repostories.
+Here is a collection of builds that were not published or were removed via git repositories.
 
 # How to use this?
 1. Download repository: `git clone https://github.com/Bijman/SRB2-Archive`
