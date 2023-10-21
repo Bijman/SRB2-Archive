@@ -1,0 +1,306 @@
+# Project: Srb2SDL
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = ../../objs/Mingw/SDL/Srb2SDL_private.res
+OBJ  = ../../objs/Mingw/SDL/hw3sound.o ../../objs/Mingw/SDL/hw_bsp.o ../../objs/Mingw/SDL/hw_cache.o ../../objs/Mingw/SDL/hw_draw.o ../../objs/Mingw/SDL/hw_light.o ../../objs/Mingw/SDL/hw_main.o ../../objs/Mingw/SDL/hw_md2.o ../../objs/Mingw/SDL/hw_trick.o ../../objs/Mingw/SDL/d_clisrv.o ../../objs/Mingw/SDL/d_main.o ../../objs/Mingw/SDL/d_net.o ../../objs/Mingw/SDL/d_netcmd.o ../../objs/Mingw/SDL/d_netfil.o ../../objs/Mingw/SDL/m_argv.o ../../objs/Mingw/SDL/m_bbox.o ../../objs/Mingw/SDL/m_cheat.o ../../objs/Mingw/SDL/m_fixed.o ../../objs/Mingw/SDL/m_menu.o ../../objs/Mingw/SDL/m_misc.o ../../objs/Mingw/SDL/m_random.o ../../objs/Mingw/SDL/p_ceilng.o ../../objs/Mingw/SDL/p_enemy.o ../../objs/Mingw/SDL/p_fab.o ../../objs/Mingw/SDL/p_floor.o ../../objs/Mingw/SDL/p_inter.o ../../objs/Mingw/SDL/p_lights.o ../../objs/Mingw/SDL/p_map.o ../../objs/Mingw/SDL/p_maputl.o ../../objs/Mingw/SDL/p_mobj.o ../../objs/Mingw/SDL/p_saveg.o ../../objs/Mingw/SDL/p_setup.o ../../objs/Mingw/SDL/p_sight.o ../../objs/Mingw/SDL/p_spec.o ../../objs/Mingw/SDL/p_telept.o ../../objs/Mingw/SDL/p_tick.o ../../objs/Mingw/SDL/p_user.o ../../objs/Mingw/SDL/r_bsp.o ../../objs/Mingw/SDL/r_data.o ../../objs/Mingw/SDL/r_draw.o ../../objs/Mingw/SDL/r_main.o ../../objs/Mingw/SDL/r_plane.o ../../objs/Mingw/SDL/r_segs.o ../../objs/Mingw/SDL/r_sky.o ../../objs/Mingw/SDL/r_splats.o ../../objs/Mingw/SDL/r_things.o ../../objs/Mingw/SDL/am_map.o ../../objs/Mingw/SDL/command.o ../../objs/Mingw/SDL/console.o ../../objs/Mingw/SDL/dehacked.o ../../objs/Mingw/SDL/Dstrings.o ../../objs/Mingw/SDL/F_finale.o ../../objs/Mingw/SDL/F_wipe.o ../../objs/Mingw/SDL/g_game.o ../../objs/Mingw/SDL/g_input.o ../../objs/Mingw/SDL/hu_stuff.o ../../objs/Mingw/SDL/i_tcp.o ../../objs/Mingw/SDL/info.o ../../objs/Mingw/SDL/md5.o ../../objs/Mingw/SDL/mserv.o ../../objs/Mingw/SDL/s_sound.o ../../objs/Mingw/SDL/screen.o ../../objs/Mingw/SDL/sounds.o ../../objs/Mingw/SDL/st_stuff.o ../../objs/Mingw/SDL/tables.o ../../objs/Mingw/SDL/v_video.o ../../objs/Mingw/SDL/w_wad.o ../../objs/Mingw/SDL/Z_zone.o ../../objs/Mingw/SDL/dosstr.o ../../objs/Mingw/SDL/endtxt.o ../../objs/Mingw/SDL/filesrch.o ../../objs/Mingw/SDL/hwsym_sdl.o ../../objs/Mingw/SDL/i_cdmus.o ../../objs/Mingw/SDL/i_main.o ../../objs/Mingw/SDL/i_net.o ../../objs/Mingw/SDL/i_sound.o ../../objs/Mingw/SDL/i_system.o ../../objs/Mingw/SDL/i_video.o ../../objs/Mingw/SDL/ogl_sdl.o ../../objs/Mingw/SDL/r_opengl.o ../../objs/Mingw/SDL/vid_copy.o ../../objs/Mingw/SDL/tmap.o ../../objs/Mingw/SDL/y_inter.o ../../objs/Mingw/SDL/tmap_mmx.o ../../objs/Mingw/SDL/filters.o ../../objs/Mingw/SDL/hq2x.o ../../objs/Mingw/SDL/lq2x.o ../../objs/Mingw/SDL/comptime.o ../../objs/Mingw/SDL/string.o ../../objs/Mingw/SDL/lzf.o ../../objs/Mingw/SDL/win_dbg.o ../../objs/Mingw/SDL/p_polyobj.o ../../objs/Mingw/SDL/m_queue.o $(RES)
+LINKOBJ  = ../../objs/Mingw/SDL/hw3sound.o ../../objs/Mingw/SDL/hw_bsp.o ../../objs/Mingw/SDL/hw_cache.o ../../objs/Mingw/SDL/hw_draw.o ../../objs/Mingw/SDL/hw_light.o ../../objs/Mingw/SDL/hw_main.o ../../objs/Mingw/SDL/hw_md2.o ../../objs/Mingw/SDL/hw_trick.o ../../objs/Mingw/SDL/d_clisrv.o ../../objs/Mingw/SDL/d_main.o ../../objs/Mingw/SDL/d_net.o ../../objs/Mingw/SDL/d_netcmd.o ../../objs/Mingw/SDL/d_netfil.o ../../objs/Mingw/SDL/m_argv.o ../../objs/Mingw/SDL/m_bbox.o ../../objs/Mingw/SDL/m_cheat.o ../../objs/Mingw/SDL/m_fixed.o ../../objs/Mingw/SDL/m_menu.o ../../objs/Mingw/SDL/m_misc.o ../../objs/Mingw/SDL/m_random.o ../../objs/Mingw/SDL/p_ceilng.o ../../objs/Mingw/SDL/p_enemy.o ../../objs/Mingw/SDL/p_fab.o ../../objs/Mingw/SDL/p_floor.o ../../objs/Mingw/SDL/p_inter.o ../../objs/Mingw/SDL/p_lights.o ../../objs/Mingw/SDL/p_map.o ../../objs/Mingw/SDL/p_maputl.o ../../objs/Mingw/SDL/p_mobj.o ../../objs/Mingw/SDL/p_saveg.o ../../objs/Mingw/SDL/p_setup.o ../../objs/Mingw/SDL/p_sight.o ../../objs/Mingw/SDL/p_spec.o ../../objs/Mingw/SDL/p_telept.o ../../objs/Mingw/SDL/p_tick.o ../../objs/Mingw/SDL/p_user.o ../../objs/Mingw/SDL/r_bsp.o ../../objs/Mingw/SDL/r_data.o ../../objs/Mingw/SDL/r_draw.o ../../objs/Mingw/SDL/r_main.o ../../objs/Mingw/SDL/r_plane.o ../../objs/Mingw/SDL/r_segs.o ../../objs/Mingw/SDL/r_sky.o ../../objs/Mingw/SDL/r_splats.o ../../objs/Mingw/SDL/r_things.o ../../objs/Mingw/SDL/am_map.o ../../objs/Mingw/SDL/command.o ../../objs/Mingw/SDL/console.o ../../objs/Mingw/SDL/dehacked.o ../../objs/Mingw/SDL/Dstrings.o ../../objs/Mingw/SDL/F_finale.o ../../objs/Mingw/SDL/F_wipe.o ../../objs/Mingw/SDL/g_game.o ../../objs/Mingw/SDL/g_input.o ../../objs/Mingw/SDL/hu_stuff.o ../../objs/Mingw/SDL/i_tcp.o ../../objs/Mingw/SDL/info.o ../../objs/Mingw/SDL/md5.o ../../objs/Mingw/SDL/mserv.o ../../objs/Mingw/SDL/s_sound.o ../../objs/Mingw/SDL/screen.o ../../objs/Mingw/SDL/sounds.o ../../objs/Mingw/SDL/st_stuff.o ../../objs/Mingw/SDL/tables.o ../../objs/Mingw/SDL/v_video.o ../../objs/Mingw/SDL/w_wad.o ../../objs/Mingw/SDL/Z_zone.o ../../objs/Mingw/SDL/dosstr.o ../../objs/Mingw/SDL/endtxt.o ../../objs/Mingw/SDL/filesrch.o ../../objs/Mingw/SDL/hwsym_sdl.o ../../objs/Mingw/SDL/i_cdmus.o ../../objs/Mingw/SDL/i_main.o ../../objs/Mingw/SDL/i_net.o ../../objs/Mingw/SDL/i_sound.o ../../objs/Mingw/SDL/i_system.o ../../objs/Mingw/SDL/i_video.o ../../objs/Mingw/SDL/ogl_sdl.o ../../objs/Mingw/SDL/r_opengl.o ../../objs/Mingw/SDL/vid_copy.o ../../objs/Mingw/SDL/tmap.o ../../objs/Mingw/SDL/y_inter.o ../../objs/Mingw/SDL/tmap_mmx.o ../../objs/Mingw/SDL/filters.o ../../objs/Mingw/SDL/hq2x.o ../../objs/Mingw/SDL/lq2x.o ../../objs/Mingw/SDL/comptime.o ../../objs/Mingw/SDL/string.o ../../objs/Mingw/SDL/lzf.o ../../objs/Mingw/SDL/win_dbg.o ../../objs/Mingw/SDL/p_polyobj.o ../../objs/Mingw/SDL/m_queue.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lSDL -lSDL_Mixer -lwsock32 -lopengl32 -lglu32 ../../tools/libpng-src/projects/libpng.a ../../tools/zlib/win32/libz.a  -fmessage-length=0 -s -march=pentium-mmx -mmmx 
+INCS =  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/include/SDL" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/include/SDL" 
+BIN  = ../../bin/Mingw/srb2sdl.exe
+CXXFLAGS = $(CXXINCS) -Os   -fverbose-asm -fexpensive-optimizations -O3 -fmessage-length=0 -march=pentium-mmx -mmmx
+CFLAGS = $(INCS) -fno-exceptions -DSTDC_HEADERS -Wall -DUSE_WGL_SWAP -DDIRECTFULLSCREEN -DSDL -DHWRENDER -DHW3SOUND -DHAVE_FILTER -DHAVE_MIXER -DUSEASM -DHAVE_PNG -Os -I../../tools/libpng-src -I../../tools/zlib   -fverbose-asm -fexpensive-optimizations -O3 -fmessage-length=0 -march=pentium-mmx -mmmx
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ../../bin/Mingw/srb2sdl.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "..\..\bin\Mingw\srb2sdl.exe" $(LIBS)
+
+../../objs/Mingw/SDL/hw3sound.o: ../hardware/hw3sound.c
+	$(CC) -c ../hardware/hw3sound.c -o ../../objs/Mingw/SDL/hw3sound.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_bsp.o: ../hardware/hw_bsp.c
+	$(CC) -c ../hardware/hw_bsp.c -o ../../objs/Mingw/SDL/hw_bsp.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_cache.o: ../hardware/hw_cache.c
+	$(CC) -c ../hardware/hw_cache.c -o ../../objs/Mingw/SDL/hw_cache.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_draw.o: ../hardware/hw_draw.c
+	$(CC) -c ../hardware/hw_draw.c -o ../../objs/Mingw/SDL/hw_draw.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_light.o: ../hardware/hw_light.c
+	$(CC) -c ../hardware/hw_light.c -o ../../objs/Mingw/SDL/hw_light.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_main.o: ../hardware/hw_main.c
+	$(CC) -c ../hardware/hw_main.c -o ../../objs/Mingw/SDL/hw_main.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_md2.o: ../hardware/hw_md2.c
+	$(CC) -c ../hardware/hw_md2.c -o ../../objs/Mingw/SDL/hw_md2.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hw_trick.o: ../hardware/hw_trick.c
+	$(CC) -c ../hardware/hw_trick.c -o ../../objs/Mingw/SDL/hw_trick.o $(CFLAGS)
+
+../../objs/Mingw/SDL/d_clisrv.o: ../d_clisrv.c
+	$(CC) -c ../d_clisrv.c -o ../../objs/Mingw/SDL/d_clisrv.o $(CFLAGS)
+
+../../objs/Mingw/SDL/d_main.o: ../d_main.c
+	$(CC) -c ../d_main.c -o ../../objs/Mingw/SDL/d_main.o $(CFLAGS)
+
+../../objs/Mingw/SDL/d_net.o: ../d_net.c
+	$(CC) -c ../d_net.c -o ../../objs/Mingw/SDL/d_net.o $(CFLAGS)
+
+../../objs/Mingw/SDL/d_netcmd.o: ../d_netcmd.c
+	$(CC) -c ../d_netcmd.c -o ../../objs/Mingw/SDL/d_netcmd.o $(CFLAGS)
+
+../../objs/Mingw/SDL/d_netfil.o: ../d_netfil.c
+	$(CC) -c ../d_netfil.c -o ../../objs/Mingw/SDL/d_netfil.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_argv.o: ../m_argv.c
+	$(CC) -c ../m_argv.c -o ../../objs/Mingw/SDL/m_argv.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_bbox.o: ../m_bbox.c
+	$(CC) -c ../m_bbox.c -o ../../objs/Mingw/SDL/m_bbox.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_cheat.o: ../m_cheat.c
+	$(CC) -c ../m_cheat.c -o ../../objs/Mingw/SDL/m_cheat.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_fixed.o: ../m_fixed.c
+	$(CC) -c ../m_fixed.c -o ../../objs/Mingw/SDL/m_fixed.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_menu.o: ../m_menu.c
+	$(CC) -c ../m_menu.c -o ../../objs/Mingw/SDL/m_menu.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_misc.o: ../m_misc.c
+	$(CC) -c ../m_misc.c -o ../../objs/Mingw/SDL/m_misc.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_random.o: ../m_random.c
+	$(CC) -c ../m_random.c -o ../../objs/Mingw/SDL/m_random.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_ceilng.o: ../p_ceilng.c
+	$(CC) -c ../p_ceilng.c -o ../../objs/Mingw/SDL/p_ceilng.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_enemy.o: ../p_enemy.c
+	$(CC) -c ../p_enemy.c -o ../../objs/Mingw/SDL/p_enemy.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_fab.o: ../p_fab.c
+	$(CC) -c ../p_fab.c -o ../../objs/Mingw/SDL/p_fab.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_floor.o: ../p_floor.c
+	$(CC) -c ../p_floor.c -o ../../objs/Mingw/SDL/p_floor.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_inter.o: ../p_inter.c
+	$(CC) -c ../p_inter.c -o ../../objs/Mingw/SDL/p_inter.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_lights.o: ../p_lights.c
+	$(CC) -c ../p_lights.c -o ../../objs/Mingw/SDL/p_lights.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_map.o: ../p_map.c
+	$(CC) -c ../p_map.c -o ../../objs/Mingw/SDL/p_map.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_maputl.o: ../p_maputl.c
+	$(CC) -c ../p_maputl.c -o ../../objs/Mingw/SDL/p_maputl.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_mobj.o: ../p_mobj.c
+	$(CC) -c ../p_mobj.c -o ../../objs/Mingw/SDL/p_mobj.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_saveg.o: ../p_saveg.c
+	$(CC) -c ../p_saveg.c -o ../../objs/Mingw/SDL/p_saveg.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_setup.o: ../p_setup.c
+	$(CC) -c ../p_setup.c -o ../../objs/Mingw/SDL/p_setup.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_sight.o: ../p_sight.c
+	$(CC) -c ../p_sight.c -o ../../objs/Mingw/SDL/p_sight.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_spec.o: ../p_spec.c
+	$(CC) -c ../p_spec.c -o ../../objs/Mingw/SDL/p_spec.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_telept.o: ../p_telept.c
+	$(CC) -c ../p_telept.c -o ../../objs/Mingw/SDL/p_telept.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_tick.o: ../p_tick.c
+	$(CC) -c ../p_tick.c -o ../../objs/Mingw/SDL/p_tick.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_user.o: ../p_user.c
+	$(CC) -c ../p_user.c -o ../../objs/Mingw/SDL/p_user.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_bsp.o: ../r_bsp.c
+	$(CC) -c ../r_bsp.c -o ../../objs/Mingw/SDL/r_bsp.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_data.o: ../r_data.c
+	$(CC) -c ../r_data.c -o ../../objs/Mingw/SDL/r_data.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_draw.o: ../r_draw.c
+	$(CC) -c ../r_draw.c -o ../../objs/Mingw/SDL/r_draw.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_main.o: ../r_main.c
+	$(CC) -c ../r_main.c -o ../../objs/Mingw/SDL/r_main.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_plane.o: ../r_plane.c
+	$(CC) -c ../r_plane.c -o ../../objs/Mingw/SDL/r_plane.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_segs.o: ../r_segs.c
+	$(CC) -c ../r_segs.c -o ../../objs/Mingw/SDL/r_segs.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_sky.o: ../r_sky.c
+	$(CC) -c ../r_sky.c -o ../../objs/Mingw/SDL/r_sky.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_splats.o: ../r_splats.c
+	$(CC) -c ../r_splats.c -o ../../objs/Mingw/SDL/r_splats.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_things.o: ../r_things.c
+	$(CC) -c ../r_things.c -o ../../objs/Mingw/SDL/r_things.o $(CFLAGS)
+
+../../objs/Mingw/SDL/am_map.o: ../am_map.c
+	$(CC) -c ../am_map.c -o ../../objs/Mingw/SDL/am_map.o $(CFLAGS)
+
+../../objs/Mingw/SDL/command.o: ../command.c
+	$(CC) -c ../command.c -o ../../objs/Mingw/SDL/command.o $(CFLAGS)
+
+../../objs/Mingw/SDL/console.o: ../console.c
+	$(CC) -c ../console.c -o ../../objs/Mingw/SDL/console.o $(CFLAGS)
+
+../../objs/Mingw/SDL/dehacked.o: ../dehacked.c
+	$(CC) -c ../dehacked.c -o ../../objs/Mingw/SDL/dehacked.o $(CFLAGS)
+
+../../objs/Mingw/SDL/Dstrings.o: ../Dstrings.c
+	$(CC) -c ../Dstrings.c -o ../../objs/Mingw/SDL/Dstrings.o $(CFLAGS)
+
+../../objs/Mingw/SDL/F_finale.o: ../F_finale.c
+	$(CC) -c ../F_finale.c -o ../../objs/Mingw/SDL/F_finale.o $(CFLAGS)
+
+../../objs/Mingw/SDL/F_wipe.o: ../F_wipe.c
+	$(CC) -c ../F_wipe.c -o ../../objs/Mingw/SDL/F_wipe.o $(CFLAGS)
+
+../../objs/Mingw/SDL/g_game.o: ../g_game.c
+	$(CC) -c ../g_game.c -o ../../objs/Mingw/SDL/g_game.o $(CFLAGS)
+
+../../objs/Mingw/SDL/g_input.o: ../g_input.c
+	$(CC) -c ../g_input.c -o ../../objs/Mingw/SDL/g_input.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hu_stuff.o: ../hu_stuff.c
+	$(CC) -c ../hu_stuff.c -o ../../objs/Mingw/SDL/hu_stuff.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_tcp.o: ../i_tcp.c
+	$(CC) -c ../i_tcp.c -o ../../objs/Mingw/SDL/i_tcp.o $(CFLAGS)
+
+../../objs/Mingw/SDL/info.o: ../info.c
+	$(CC) -c ../info.c -o ../../objs/Mingw/SDL/info.o $(CFLAGS)
+
+../../objs/Mingw/SDL/md5.o: ../md5.c
+	$(CC) -c ../md5.c -o ../../objs/Mingw/SDL/md5.o $(CFLAGS)
+
+../../objs/Mingw/SDL/mserv.o: ../mserv.c
+	$(CC) -c ../mserv.c -o ../../objs/Mingw/SDL/mserv.o $(CFLAGS)
+
+../../objs/Mingw/SDL/s_sound.o: ../s_sound.c
+	$(CC) -c ../s_sound.c -o ../../objs/Mingw/SDL/s_sound.o $(CFLAGS)
+
+../../objs/Mingw/SDL/screen.o: ../screen.c
+	$(CC) -c ../screen.c -o ../../objs/Mingw/SDL/screen.o $(CFLAGS)
+
+../../objs/Mingw/SDL/sounds.o: ../sounds.c
+	$(CC) -c ../sounds.c -o ../../objs/Mingw/SDL/sounds.o $(CFLAGS)
+
+../../objs/Mingw/SDL/st_stuff.o: ../st_stuff.c
+	$(CC) -c ../st_stuff.c -o ../../objs/Mingw/SDL/st_stuff.o $(CFLAGS)
+
+../../objs/Mingw/SDL/tables.o: ../tables.c
+	$(CC) -c ../tables.c -o ../../objs/Mingw/SDL/tables.o $(CFLAGS)
+
+../../objs/Mingw/SDL/v_video.o: ../v_video.c
+	$(CC) -c ../v_video.c -o ../../objs/Mingw/SDL/v_video.o $(CFLAGS)
+
+../../objs/Mingw/SDL/w_wad.o: ../w_wad.c
+	$(CC) -c ../w_wad.c -o ../../objs/Mingw/SDL/w_wad.o $(CFLAGS)
+
+../../objs/Mingw/SDL/Z_zone.o: ../Z_zone.c
+	$(CC) -c ../Z_zone.c -o ../../objs/Mingw/SDL/Z_zone.o $(CFLAGS)
+
+../../objs/Mingw/SDL/dosstr.o: dosstr.c
+	$(CC) -c dosstr.c -o ../../objs/Mingw/SDL/dosstr.o $(CFLAGS)
+
+../../objs/Mingw/SDL/endtxt.o: endtxt.c
+	$(CC) -c endtxt.c -o ../../objs/Mingw/SDL/endtxt.o $(CFLAGS)
+
+../../objs/Mingw/SDL/filesrch.o: ../filesrch.c
+	$(CC) -c ../filesrch.c -o ../../objs/Mingw/SDL/filesrch.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hwsym_sdl.o: hwsym_sdl.c
+	$(CC) -c hwsym_sdl.c -o ../../objs/Mingw/SDL/hwsym_sdl.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_cdmus.o: i_cdmus.c
+	$(CC) -c i_cdmus.c -o ../../objs/Mingw/SDL/i_cdmus.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_main.o: i_main.c
+	$(CC) -c i_main.c -o ../../objs/Mingw/SDL/i_main.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_net.o: i_net.c
+	$(CC) -c i_net.c -o ../../objs/Mingw/SDL/i_net.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_sound.o: i_sound.c
+	$(CC) -c i_sound.c -o ../../objs/Mingw/SDL/i_sound.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_system.o: i_system.c
+	$(CC) -c i_system.c -o ../../objs/Mingw/SDL/i_system.o $(CFLAGS)
+
+../../objs/Mingw/SDL/i_video.o: i_video.c
+	$(CC) -c i_video.c -o ../../objs/Mingw/SDL/i_video.o $(CFLAGS)
+
+../../objs/Mingw/SDL/ogl_sdl.o: ogl_sdl.c
+	$(CC) -c ogl_sdl.c -o ../../objs/Mingw/SDL/ogl_sdl.o $(CFLAGS)
+
+../../objs/Mingw/SDL/r_opengl.o: ../hardware/r_opengl/r_opengl.c
+	$(CC) -c ../hardware/r_opengl/r_opengl.c -o ../../objs/Mingw/SDL/r_opengl.o $(CFLAGS)
+
+../../objs/Mingw/SDL/vid_copy.o: ../vid_copy.s
+	$(CC) -g $(CXXFLAGS) -x assembler-with-cpp -c ../vid_copy.s -o ../../objs/Mingw/SDL/vid_copy.o
+
+../../objs/Mingw/SDL/tmap.o: ../tmap.nas
+	nasmw.exe -o ../../objs/Mingw/SDL/tmap.o -f win32 ../tmap.nas
+
+../../objs/Mingw/SDL/y_inter.o: ../y_inter.c
+	$(CC) -c ../y_inter.c -o ../../objs/Mingw/SDL/y_inter.o $(CFLAGS)
+
+../../objs/Mingw/SDL/tmap_mmx.o: ../tmap_mmx.nas
+	nasmw.exe -o ../../objs/Mingw/SDL/tmap_mmx.o -f win32 ../tmap_mmx.nas
+
+../../objs/Mingw/SDL/filters.o: filter/filters.c
+	$(CC) -c filter/filters.c -o ../../objs/Mingw/SDL/filters.o $(CFLAGS)
+
+../../objs/Mingw/SDL/hq2x.o: filter/hq2x.c
+	$(CC) -c filter/hq2x.c -o ../../objs/Mingw/SDL/hq2x.o $(CFLAGS)
+
+../../objs/Mingw/SDL/lq2x.o: filter/lq2x.c
+	$(CC) -c filter/lq2x.c -o ../../objs/Mingw/SDL/lq2x.o $(CFLAGS)
+
+../../objs/Mingw/SDL/comptime.o: ../comptime.c
+	$(CC) -c ../comptime.c -o ../../objs/Mingw/SDL/comptime.o $(CFLAGS)
+
+../../objs/Mingw/SDL/string.o: ../string.c
+	$(CC) -c ../string.c -o ../../objs/Mingw/SDL/string.o $(CFLAGS)
+
+../../objs/Mingw/SDL/lzf.o: ../lzf.c
+	$(CC) -c ../lzf.c -o ../../objs/Mingw/SDL/lzf.o $(CFLAGS)
+
+../../objs/Mingw/SDL/win_dbg.o: ../win32/win_dbg.c
+	$(CC) -c ../win32/win_dbg.c -o ../../objs/Mingw/SDL/win_dbg.o $(CFLAGS)
+
+../../objs/Mingw/SDL/p_polyobj.o: ../p_polyobj.c
+	$(CC) -c ../p_polyobj.c -o ../../objs/Mingw/SDL/p_polyobj.o $(CFLAGS)
+
+../../objs/Mingw/SDL/m_queue.o: ../m_queue.c
+	$(CC) -c ../m_queue.c -o ../../objs/Mingw/SDL/m_queue.o $(CFLAGS)
+
+../../objs/Mingw/SDL/Srb2SDL_private.res: Srb2SDL_private.rc ../../src/win32/Srb2win.rc 
+	$(WINDRES) -i Srb2SDL_private.rc --input-format=rc -o ../../objs/Mingw/SDL/Srb2SDL_private.res -O coff  --include-dir ../win32
