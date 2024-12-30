@@ -1,0 +1,138 @@
+
+cd srb2riderssource\src
+
+mingw32-make MINGW=1 CC=gcc WINDOWSHELL=1
+
+
+--------+-------+-------+-------+
+Shadow	| 38	| 38	|  72	|
+Sonic	| 37	| 39	|  96	|
+Jet	| 37	| 40	|  72	|
+Blaze	| 36	| 40	| 120	|
+Amy	| 36	| 41	|  96	|
+--------+-------+-------+-------+
+Knuckls	| 35	| 42	| 120	|
+Eggman	| 35	| 42	| 120	|
+--------+-------+-------+-------+
+Silver	| 34	| 43	| 144	|
+Rouge	| 34	| 44	| 120	|
+Wave	| 33	| 44	| 168	|
+Tails	| 33	| 45	| 144	|
+Cream	| 32	| 46	| 168	|
+--------+-------+-------+-------+  39/31  50/34  192/ 48
+	| Speed	| Accel	| Xstrt	|| Speed| Accel	| Xstrt	|	1 Speed == 2 Accel == 4 Xstrt
+--------+-------+-------+-------+  +4/-4  +8/-8   +6/-6
+Shadow	| +3	| -4	| -4	|
+Sonic	| +2	| -3	| -2	|
+Jet	| +2	| -2	| -4	|
+Blaze	| +1	| -2	|  0	|
+Amy	| +1	| -1	| -2	|
+--------+-------+-------+-------+
+Knuckls	|  0	|  0	|  0	|
+Eggman	|  0	|  0	|  0	|
+--------+-------+-------+-------+
+Silver	| -1	| +1	| +2	|
+Rouge	| -1	| +2	|  0	|
+Wave	| -2	| +2	| +4	|
+Tails	| -2	| +3	| +2	|
+Cream	| -3	| +4	| +4	|
+--------+-------+-------+-------+
+
+8 | Incredible		Incredible
+7 | ------------------>	Amazing
+6 | Awesome		Awesome	<------	(XXX)
+5 | ------------------>	Great
+4 | Good		Good
+3 | ------------------>	Alright	<------	(XXX)
+2 | Above Average	Above Average
+1 | ------------------>	Mediocre
+0 | Average		Average
+1 | ------------------>	Poor
+2 | Below Average	Below Average
+3 | ------------------>	Weak <---------	(XXX)
+4 | Bad			Bad
+5 | ------------------>	Shameful
+6 | Awful		Awful <--------	(XXX)
+7 | ------------------>	Terrible
+8 | Horrifying		Horrifying
+
+--------+-------+-------+-------+
+KOTE	| 34	| 47	|  48	|
+CrawlaH	| 33	| 43	| 192	|
+MtlSonc	| 39	| 35	|  96	|
+--------+-------+-------+-------+
+Zarro	| 38	| 35	| 144	|
+Daniruu	| 34	| 47	|  48	|
+--------+-------+-------+-------+
+	| Speed	| Accel	| Xstrt	|
+--------+-------+-------+-------+  39/31   50/34  192/ 48
+Average	| 35	| 42	| 120	|| Speed | Accel | Xstrt |	1 Speed == 2 Accel == 4 Xstrt
+--------+-------+-------+-------+  +4/-4   +8/-8   +6/-6
+	| Speed	| Accel	| Xstrt	|
+--------+-------+-------+-------+
+KOTE	| -1	| +5	| -6	|
+CrawlaH	| -2	| +1	| +6	|
+MtlSonc	| +4	| -7	| -2	|
+--------+-------+-------+-------+
+Zarro	| +3	| -7	| +2	|
+Daniruu	| -1	| +5	| -6	|
+--------+-------+-------+-------+
+
+   0 ( 1 )
+ 360 ( 2 )
+ 720 ( 3 )
+1080 ( 4 )
+1440 ( 5 )
+1800 ( 6 )
+2160 ( 7 )
+2520 ( 8 )
+2880 ( 9 )
+3240 ( 0 )
+3600 ( ! )
+
+
+Item            | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th+
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+Banana Peel     |     |     |     |     |     |     |     |  
+Green Shell     |     |     |     |     |     |     |     |  
+Red Shell       |     |     |     |     |     |     |     |  
+Fake Itembox    |     |     |     |     |     |     |     |  
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+Bomb            |     |     |     |     |     |     |     |  
+Thunder         |     |     |     |     |     |     |     |  
+Blue Thunder    |     |     |     |     |     |     |     |  
+Star            |     |     |     |     |     |     |     |  
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+Mushroom        |     |     |     |     |     |     |     |  
+Triple Mushroom |     |     |     |     |     |     |     |  
+Mega Mushroom   |     |     |     |     |     |     |     |  
+Golden Mushroom |     |     |     |     |     |     |     |  
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+Fire Flower     |     |     |     |     |     |     |     |  
+Pink Boo        |     |     |     |     |     |     |     |  
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+/2 Force Shield |  3  |  0  |  0  |  0  |  0  |  0  |  0  |  0
+Force Shield    |  0  |     |     |     |     |     |     |  
+Whirlwind Shield|  0  |     |     |     |     |     |     |  
+Magnet Shield   |  0  |     |     |     |     |     |     |  
+Elemental Shield|  0  |     |     |     |     |     |     |  
+Armageddon Shld |  0  |     |     |     |     |     |     |  
+----------------+-----+-----+-----+-----+-----+-----+-----+------
+
+=================================================================
+=================================================================
+
+TO-FIX LIST:
+
+[$] Re-fix offroad (change the multiply/divide from "speed" to "accelstart" and/or change accelstart to just a set number)
+[ ] Add a cup select menu
+[$] Re-add single player (As an option after multi)
+[$] Add spectate
+[$] Rearrange maps (D00D is doing?)
+[$] Have [pw_flashing] and [pw_bananacam] lower speed while active
+[$] Hack the wipe-outs so [pw_introcam] and [pw_bananacam] can't be reset while [pw_bananacam] is active 
+	(so "each-time" sectors can be "continuous" to keep multiplayer from bugging)
+[$] (47) Custom [pw_] to make you jump.
+[$] Add fireflower
+[$] Fix shell spawn offset to permanently fix the too-fast-delete problems
+[ ] 

@@ -1,0 +1,97 @@
+SRB2Kart Cup Layout
+
+--Original--
+
+-Mushroom Cup-
+
+1. Mario Circuit		(MAP01)
+2. Pipe Speedway
+3. Darkvile Castle
+4. Peach's Castle
+
+-Flower Cup-
+
+1. Forgotten Ruins		(MAP05)
+2. ShyGuy Circuit
+3. Blue Mountain
+4. Lovely Afternoon
+
+-Star Cup-
+
+1. Darkvile Garden		(MAP09)
+2. Cheep Cheep Coast
+3. Canyon Rush
+4. Black Bliss
+
+-Special Cup-
+
+1. Volcanic Valley		(MAP13)
+2. Cloud Cradle
+3. Thunder Piston
+4. (TBA) Rainbow Realm
+
+-Azure Cup-
+
+1. Azure Island			(MAP17)
+2. Azure City
+3. Skyrise Metropolis
+4. Chemical Facility
+
+-Paper Cup-
+
+1. Silver Circuit		(MAP21)
+2. Onyx Forest
+3. (TBA) ????
+4. (TBA) ????
+
+
+--Retro--
+
+-Shell Cup-
+
+1. GCN Luigi Circuit		(MAPA1) 101
+2. GBA Riverside Park
+3. GBA Ribbon Road
+4. N64 Mario Raceway
+
+-Banana Cup-
+
+1. GBA Luigi Circuit		(MAPA5) 105
+2. GBA Boo Lake
+3. NDS Shroom Ridge
+4. NDS Delfino Square
+
+-Leaf Cup-
+
+1. NDS Desert Hills		(MAPA9) 109 
+2. SNS Ghost Valley 2				(TBR) SNS Bowser Castle 2
+3. GBA Sky Garden
+4. SNS Mario Circuit 4
+
+-Lightning Cup-
+
+1. SNS Donut Plains 3		(MAPAD) 113
+2. N64 Banshee Boardwalk
+3. N64 Bowser Castle
+4. GBA Rainbow Road
+
+-Hero Cup-
+
+1. RID Metal City		(MAPAH) 117
+2. RID Splash Canyon
+3. RID Green Cave
+4. RID Sand Ruins
+
+-Zero Cup-
+
+1. RID Night Chase		(MAPAL) 121
+2. RID Red Canyon
+3. RID White Forest
+4. RID Dark Desert
+
+-Extra Cup-
+
+1. GBA Snow Land		(MAPAP) 125
+2. FZR Silence
+3. PWR Retro Maze
+4. RID Digital Dimension

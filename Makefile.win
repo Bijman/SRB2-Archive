@@ -1,0 +1,339 @@
+# Project: Srb2Riders
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 7.3 on 15/01/12 13:43
+
+WXLIBNAME = wxmsw28
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = objs/Mingw/Release/hw3sound.o objs/Mingw/Release/hw_bsp.o objs/Mingw/Release/hw_cache.o objs/Mingw/Release/hw_draw.o objs/Mingw/Release/hw_light.o objs/Mingw/Release/hw_main.o objs/Mingw/Release/hw_md2.o objs/Mingw/Release/hw_trick.o objs/Mingw/Release/d_clisrv.o objs/Mingw/Release/d_main.o objs/Mingw/Release/d_net.o objs/Mingw/Release/d_netcmd.o objs/Mingw/Release/d_netfil.o objs/Mingw/Release/m_argv.o objs/Mingw/Release/m_bbox.o objs/Mingw/Release/m_cheat.o objs/Mingw/Release/m_fixed.o objs/Mingw/Release/m_menu.o objs/Mingw/Release/m_misc.o objs/Mingw/Release/m_random.o objs/Mingw/Release/p_ceilng.o objs/Mingw/Release/p_enemy.o objs/Mingw/Release/p_fab.o objs/Mingw/Release/p_floor.o objs/Mingw/Release/p_inter.o objs/Mingw/Release/p_lights.o objs/Mingw/Release/p_map.o objs/Mingw/Release/p_maputl.o objs/Mingw/Release/p_mobj.o objs/Mingw/Release/p_saveg.o objs/Mingw/Release/p_setup.o objs/Mingw/Release/p_sight.o objs/Mingw/Release/p_spec.o objs/Mingw/Release/p_telept.o objs/Mingw/Release/p_tick.o objs/Mingw/Release/p_user.o objs/Mingw/Release/r_bsp.o objs/Mingw/Release/r_data.o objs/Mingw/Release/r_draw.o objs/Mingw/Release/r_main.o objs/Mingw/Release/r_plane.o objs/Mingw/Release/r_segs.o objs/Mingw/Release/r_sky.o objs/Mingw/Release/r_splats.o objs/Mingw/Release/r_things.o objs/Mingw/Release/am_map.o objs/Mingw/Release/command.o objs/Mingw/Release/console.o objs/Mingw/Release/dehacked.o objs/Mingw/Release/Dstrings.o objs/Mingw/Release/F_finale.o objs/Mingw/Release/F_wipe.o objs/Mingw/Release/g_game.o objs/Mingw/Release/g_input.o objs/Mingw/Release/hu_stuff.o objs/Mingw/Release/i_tcp.o objs/Mingw/Release/info.o objs/Mingw/Release/md5.o objs/Mingw/Release/mserv.o objs/Mingw/Release/s_sound.o objs/Mingw/Release/screen.o objs/Mingw/Release/sounds.o objs/Mingw/Release/st_stuff.o objs/Mingw/Release/tables.o objs/Mingw/Release/v_video.o objs/Mingw/Release/w_wad.o objs/Mingw/Release/Z_zone.o objs/Mingw/Release/vid_copy.o objs/Mingw/Release/y_inter.o objs/Mingw/Release/string.o objs/Mingw/Release/lzf.o objs/Mingw/Release/p_polyobj.o objs/Mingw/Release/m_queue.o objs/Mingw/Release/filesrch.o objs/Mingw/Release/dx_error.o objs/Mingw/Release/fabdxlib.o objs/Mingw/Release/mid2strm.o objs/Mingw/Release/win_cd.o objs/Mingw/Release/win_dbg.o objs/Mingw/Release/win_dll.o objs/Mingw/Release/win_main.o objs/Mingw/Release/win_net.o objs/Mingw/Release/win_snd.o objs/Mingw/Release/win_sys.o objs/Mingw/Release/win_vid.o objs/Mingw/Release/dosstr.o objs/Mingw/Release/endtxt.o objs/Mingw/Release/hwsym_sdl.o objs/Mingw/Release/i_cdmus.o objs/Mingw/Release/i_main.o objs/Mingw/Release/i_net.o objs/Mingw/Release/i_sound.o objs/Mingw/Release/i_system.o objs/Mingw/Release/i_video.o objs/Mingw/Release/ogl_sdl.o objs/Mingw/Release/r_opengl.o objs/Mingw/Release/JB_Bot.o objs/Mingw/Release/JB_Command.o objs/Mingw/Release/JB_Game.o objs/Mingw/Release/Rider_Info.o objs/Mingw/Release/comptime.o objs/Mingw/Release/Srb2Riders_private.res
+LINKOBJ   = "objs/Mingw/Release/hw3sound.o" "objs/Mingw/Release/hw_bsp.o" "objs/Mingw/Release/hw_cache.o" "objs/Mingw/Release/hw_draw.o" "objs/Mingw/Release/hw_light.o" "objs/Mingw/Release/hw_main.o" "objs/Mingw/Release/hw_md2.o" "objs/Mingw/Release/hw_trick.o" "objs/Mingw/Release/d_clisrv.o" "objs/Mingw/Release/d_main.o" "objs/Mingw/Release/d_net.o" "objs/Mingw/Release/d_netcmd.o" "objs/Mingw/Release/d_netfil.o" "objs/Mingw/Release/m_argv.o" "objs/Mingw/Release/m_bbox.o" "objs/Mingw/Release/m_cheat.o" "objs/Mingw/Release/m_fixed.o" "objs/Mingw/Release/m_menu.o" "objs/Mingw/Release/m_misc.o" "objs/Mingw/Release/m_random.o" "objs/Mingw/Release/p_ceilng.o" "objs/Mingw/Release/p_enemy.o" "objs/Mingw/Release/p_fab.o" "objs/Mingw/Release/p_floor.o" "objs/Mingw/Release/p_inter.o" "objs/Mingw/Release/p_lights.o" "objs/Mingw/Release/p_map.o" "objs/Mingw/Release/p_maputl.o" "objs/Mingw/Release/p_mobj.o" "objs/Mingw/Release/p_saveg.o" "objs/Mingw/Release/p_setup.o" "objs/Mingw/Release/p_sight.o" "objs/Mingw/Release/p_spec.o" "objs/Mingw/Release/p_telept.o" "objs/Mingw/Release/p_tick.o" "objs/Mingw/Release/p_user.o" "objs/Mingw/Release/r_bsp.o" "objs/Mingw/Release/r_data.o" "objs/Mingw/Release/r_draw.o" "objs/Mingw/Release/r_main.o" "objs/Mingw/Release/r_plane.o" "objs/Mingw/Release/r_segs.o" "objs/Mingw/Release/r_sky.o" "objs/Mingw/Release/r_splats.o" "objs/Mingw/Release/r_things.o" "objs/Mingw/Release/am_map.o" "objs/Mingw/Release/command.o" "objs/Mingw/Release/console.o" "objs/Mingw/Release/dehacked.o" "objs/Mingw/Release/Dstrings.o" "objs/Mingw/Release/F_finale.o" "objs/Mingw/Release/F_wipe.o" "objs/Mingw/Release/g_game.o" "objs/Mingw/Release/g_input.o" "objs/Mingw/Release/hu_stuff.o" "objs/Mingw/Release/i_tcp.o" "objs/Mingw/Release/info.o" "objs/Mingw/Release/md5.o" "objs/Mingw/Release/mserv.o" "objs/Mingw/Release/s_sound.o" "objs/Mingw/Release/screen.o" "objs/Mingw/Release/sounds.o" "objs/Mingw/Release/st_stuff.o" "objs/Mingw/Release/tables.o" "objs/Mingw/Release/v_video.o" "objs/Mingw/Release/w_wad.o" "objs/Mingw/Release/Z_zone.o" "objs/Mingw/Release/vid_copy.o" "objs/Mingw/Release/y_inter.o" "objs/Mingw/Release/string.o" "objs/Mingw/Release/lzf.o" "objs/Mingw/Release/p_polyobj.o" "objs/Mingw/Release/m_queue.o" "objs/Mingw/Release/filesrch.o" "objs/Mingw/Release/dx_error.o" "objs/Mingw/Release/fabdxlib.o" "objs/Mingw/Release/mid2strm.o" "objs/Mingw/Release/win_cd.o" "objs/Mingw/Release/win_dbg.o" "objs/Mingw/Release/win_dll.o" "objs/Mingw/Release/win_main.o" "objs/Mingw/Release/win_net.o" "objs/Mingw/Release/win_snd.o" "objs/Mingw/Release/win_sys.o" "objs/Mingw/Release/win_vid.o" "objs/Mingw/Release/dosstr.o" "objs/Mingw/Release/endtxt.o" "objs/Mingw/Release/hwsym_sdl.o" "objs/Mingw/Release/i_cdmus.o" "objs/Mingw/Release/i_main.o" "objs/Mingw/Release/i_net.o" "objs/Mingw/Release/i_sound.o" "objs/Mingw/Release/i_system.o" "objs/Mingw/Release/i_video.o" "objs/Mingw/Release/ogl_sdl.o" "objs/Mingw/Release/r_opengl.o" "objs/Mingw/Release/JB_Bot.o" "objs/Mingw/Release/JB_Command.o" "objs/Mingw/Release/JB_Game.o" "objs/Mingw/Release/Rider_Info.o" "objs/Mingw/Release/comptime.o" objs/Mingw/Release/Srb2Riders_private.res
+LIBS      = -L"C:/MinGW/Lib" -L"C:/MinGW/sdl/lib" -L"tools/libpng-src/projects" -L"tools/zlib/win32" -lgdi32 -ldinput -ldxguid -lwinmm -lwsock32 -static -lpng32 -lz32 -mwindows  -fmessage-length=0 -march=pentium-mmx -mmmx 
+INCS      = -I"C:/MinGW/Include" -I"C:/MinGW/sdl/include/SDL" -I"tools/libpng-src" -I"tools/zlib"
+CXXINCS   = -I"C:/Program Files/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.5/backward" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.5/mingw32" -I"C:/Program Files/Dev-Cpp/include/c++/3.4.5" -I"C:/Program Files/Dev-Cpp/include" -I"C:/Program Files/Dev-Cpp/" -I"C:/Program Files/Dev-Cpp/include/common/wx/msw" -I"C:/Program Files/Dev-Cpp/include/common/wx/generic" -I"C:/Program Files/Dev-Cpp/include/common/wx/fl" -I"C:/Program Files/Dev-Cpp/include/common/wx/gizmos" -I"C:/Program Files/Dev-Cpp/include/common/wx/html" -I"C:/Program Files/Dev-Cpp/include/common/wx/mmedia" -I"C:/Program Files/Dev-Cpp/include/common/wx/net" -I"C:/Program Files/Dev-Cpp/include/common/wx/ogl" -I"C:/Program Files/Dev-Cpp/include/common/wx/plot" -I"C:/Program Files/Dev-Cpp/include/common/wx/protocol" -I"C:/Program Files/Dev-Cpp/include/common/wx/stc" -I"C:/Program Files/Dev-Cpp/include/common/wx/svg" -I"C:/Program Files/Dev-Cpp/include/common/wx/xml" -I"C:/Program Files/Dev-Cpp/include/common/wx/xrc" -I"C:/Program Files/Dev-Cpp/include/common/wx" -I"C:/Program Files/Dev-Cpp/include/common" -I"tools/libpng-src" -I"tools/zlib"
+RCINCS    = --include-dir "C:/PROGRA~1/Dev-Cpp/include/common" -I"src/win32"
+BIN       = ../1.1/srb2riders.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES) -Os -g   -fmessage-length=0 -march=pentium-mmx -mmmx
+CFLAGS    = $(INCS) $(DEFINES) -DNDEBUG -fno-exceptions -DSTDC_HEADERS -Wall -Os -g -D_WINDOWS -DHAVE_PNG -DNOROPENGL -DRIDERS -DCOLORS   -fmessage-length=0 -march=pentium-mmx -mmmx
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+include comptime.mk
+include cpdebug.mk
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+objs/Mingw/Release/hw3sound.o: $(GLOBALDEPS) src/hardware/hw3sound.c
+	$(CC) -c src/hardware/hw3sound.c -o objs/Mingw/Release/hw3sound.o $(CFLAGS)
+
+objs/Mingw/Release/hw_bsp.o: $(GLOBALDEPS) src/hardware/hw_bsp.c
+	$(CC) -c src/hardware/hw_bsp.c -o objs/Mingw/Release/hw_bsp.o $(CFLAGS)
+
+objs/Mingw/Release/hw_cache.o: $(GLOBALDEPS) src/hardware/hw_cache.c
+	$(CC) -c src/hardware/hw_cache.c -o objs/Mingw/Release/hw_cache.o $(CFLAGS)
+
+objs/Mingw/Release/hw_draw.o: $(GLOBALDEPS) src/hardware/hw_draw.c
+	$(CC) -c src/hardware/hw_draw.c -o objs/Mingw/Release/hw_draw.o $(CFLAGS)
+
+objs/Mingw/Release/hw_light.o: $(GLOBALDEPS) src/hardware/hw_light.c
+	$(CC) -c src/hardware/hw_light.c -o objs/Mingw/Release/hw_light.o $(CFLAGS)
+
+objs/Mingw/Release/hw_main.o: $(GLOBALDEPS) src/hardware/hw_main.c
+	$(CC) -c src/hardware/hw_main.c -o objs/Mingw/Release/hw_main.o $(CFLAGS)
+
+objs/Mingw/Release/hw_md2.o: $(GLOBALDEPS) src/hardware/hw_md2.c
+	$(CC) -c src/hardware/hw_md2.c -o objs/Mingw/Release/hw_md2.o $(CFLAGS)
+
+objs/Mingw/Release/hw_trick.o: $(GLOBALDEPS) src/hardware/hw_trick.c
+	$(CC) -c src/hardware/hw_trick.c -o objs/Mingw/Release/hw_trick.o $(CFLAGS)
+
+objs/Mingw/Release/d_clisrv.o: $(GLOBALDEPS) src/d_clisrv.c
+	$(CC) -c src/d_clisrv.c -o objs/Mingw/Release/d_clisrv.o $(CFLAGS)
+
+objs/Mingw/Release/d_main.o: $(GLOBALDEPS) src/d_main.c
+	$(CC) -c src/d_main.c -o objs/Mingw/Release/d_main.o $(CFLAGS)
+
+objs/Mingw/Release/d_net.o: $(GLOBALDEPS) src/d_net.c
+	$(CC) -c src/d_net.c -o objs/Mingw/Release/d_net.o $(CFLAGS)
+
+objs/Mingw/Release/d_netcmd.o: $(GLOBALDEPS) src/d_netcmd.c
+	$(CC) -c src/d_netcmd.c -o objs/Mingw/Release/d_netcmd.o $(CFLAGS)
+
+objs/Mingw/Release/d_netfil.o: $(GLOBALDEPS) src/d_netfil.c
+	$(CC) -c src/d_netfil.c -o objs/Mingw/Release/d_netfil.o $(CFLAGS)
+
+objs/Mingw/Release/m_argv.o: $(GLOBALDEPS) src/m_argv.c
+	$(CC) -c src/m_argv.c -o objs/Mingw/Release/m_argv.o $(CFLAGS)
+
+objs/Mingw/Release/m_bbox.o: $(GLOBALDEPS) src/m_bbox.c
+	$(CC) -c src/m_bbox.c -o objs/Mingw/Release/m_bbox.o $(CFLAGS)
+
+objs/Mingw/Release/m_cheat.o: $(GLOBALDEPS) src/m_cheat.c
+	$(CC) -c src/m_cheat.c -o objs/Mingw/Release/m_cheat.o $(CFLAGS)
+
+objs/Mingw/Release/m_fixed.o: $(GLOBALDEPS) src/m_fixed.c
+	$(CC) -c src/m_fixed.c -o objs/Mingw/Release/m_fixed.o $(CFLAGS)
+
+objs/Mingw/Release/m_menu.o: $(GLOBALDEPS) src/m_menu.c
+	$(CC) -c src/m_menu.c -o objs/Mingw/Release/m_menu.o $(CFLAGS)
+
+objs/Mingw/Release/m_misc.o: $(GLOBALDEPS) src/m_misc.c
+	$(CC) -c src/m_misc.c -o objs/Mingw/Release/m_misc.o $(CFLAGS)
+
+objs/Mingw/Release/m_random.o: $(GLOBALDEPS) src/m_random.c
+	$(CC) -c src/m_random.c -o objs/Mingw/Release/m_random.o $(CFLAGS)
+
+objs/Mingw/Release/p_ceilng.o: $(GLOBALDEPS) src/p_ceilng.c
+	$(CC) -c src/p_ceilng.c -o objs/Mingw/Release/p_ceilng.o $(CFLAGS)
+
+objs/Mingw/Release/p_enemy.o: $(GLOBALDEPS) src/p_enemy.c
+	$(CC) -c src/p_enemy.c -o objs/Mingw/Release/p_enemy.o $(CFLAGS)
+
+objs/Mingw/Release/p_fab.o: $(GLOBALDEPS) src/p_fab.c
+	$(CC) -c src/p_fab.c -o objs/Mingw/Release/p_fab.o $(CFLAGS)
+
+objs/Mingw/Release/p_floor.o: $(GLOBALDEPS) src/p_floor.c
+	$(CC) -c src/p_floor.c -o objs/Mingw/Release/p_floor.o $(CFLAGS)
+
+objs/Mingw/Release/p_inter.o: $(GLOBALDEPS) src/p_inter.c
+	$(CC) -c src/p_inter.c -o objs/Mingw/Release/p_inter.o $(CFLAGS)
+
+objs/Mingw/Release/p_lights.o: $(GLOBALDEPS) src/p_lights.c
+	$(CC) -c src/p_lights.c -o objs/Mingw/Release/p_lights.o $(CFLAGS)
+
+objs/Mingw/Release/p_map.o: $(GLOBALDEPS) src/p_map.c
+	$(CC) -c src/p_map.c -o objs/Mingw/Release/p_map.o $(CFLAGS)
+
+objs/Mingw/Release/p_maputl.o: $(GLOBALDEPS) src/p_maputl.c
+	$(CC) -c src/p_maputl.c -o objs/Mingw/Release/p_maputl.o $(CFLAGS)
+
+objs/Mingw/Release/p_mobj.o: $(GLOBALDEPS) src/p_mobj.c
+	$(CC) -c src/p_mobj.c -o objs/Mingw/Release/p_mobj.o $(CFLAGS)
+
+objs/Mingw/Release/p_saveg.o: $(GLOBALDEPS) src/p_saveg.c
+	$(CC) -c src/p_saveg.c -o objs/Mingw/Release/p_saveg.o $(CFLAGS)
+
+objs/Mingw/Release/p_setup.o: $(GLOBALDEPS) src/p_setup.c
+	$(CC) -c src/p_setup.c -o objs/Mingw/Release/p_setup.o $(CFLAGS)
+
+objs/Mingw/Release/p_sight.o: $(GLOBALDEPS) src/p_sight.c
+	$(CC) -c src/p_sight.c -o objs/Mingw/Release/p_sight.o $(CFLAGS)
+
+objs/Mingw/Release/p_spec.o: $(GLOBALDEPS) src/p_spec.c
+	$(CC) -c src/p_spec.c -o objs/Mingw/Release/p_spec.o $(CFLAGS)
+
+objs/Mingw/Release/p_telept.o: $(GLOBALDEPS) src/p_telept.c
+	$(CC) -c src/p_telept.c -o objs/Mingw/Release/p_telept.o $(CFLAGS)
+
+objs/Mingw/Release/p_tick.o: $(GLOBALDEPS) src/p_tick.c
+	$(CC) -c src/p_tick.c -o objs/Mingw/Release/p_tick.o $(CFLAGS)
+
+objs/Mingw/Release/p_user.o: $(GLOBALDEPS) src/p_user.c
+	$(CC) -c src/p_user.c -o objs/Mingw/Release/p_user.o $(CFLAGS)
+
+objs/Mingw/Release/r_bsp.o: $(GLOBALDEPS) src/r_bsp.c
+	$(CC) -c src/r_bsp.c -o objs/Mingw/Release/r_bsp.o $(CFLAGS)
+
+objs/Mingw/Release/r_data.o: $(GLOBALDEPS) src/r_data.c
+	$(CC) -c src/r_data.c -o objs/Mingw/Release/r_data.o $(CFLAGS)
+
+objs/Mingw/Release/r_draw.o: $(GLOBALDEPS) src/r_draw.c
+	$(CC) -c src/r_draw.c -o objs/Mingw/Release/r_draw.o $(CFLAGS)
+
+objs/Mingw/Release/r_main.o: $(GLOBALDEPS) src/r_main.c
+	$(CC) -c src/r_main.c -o objs/Mingw/Release/r_main.o $(CFLAGS)
+
+objs/Mingw/Release/r_plane.o: $(GLOBALDEPS) src/r_plane.c
+	$(CC) -c src/r_plane.c -o objs/Mingw/Release/r_plane.o $(CFLAGS)
+
+objs/Mingw/Release/r_segs.o: $(GLOBALDEPS) src/r_segs.c
+	$(CC) -c src/r_segs.c -o objs/Mingw/Release/r_segs.o $(CFLAGS)
+
+objs/Mingw/Release/r_sky.o: $(GLOBALDEPS) src/r_sky.c
+	$(CC) -c src/r_sky.c -o objs/Mingw/Release/r_sky.o $(CFLAGS)
+
+objs/Mingw/Release/r_splats.o: $(GLOBALDEPS) src/r_splats.c
+	$(CC) -c src/r_splats.c -o objs/Mingw/Release/r_splats.o $(CFLAGS)
+
+objs/Mingw/Release/r_things.o: $(GLOBALDEPS) src/r_things.c
+	$(CC) -c src/r_things.c -o objs/Mingw/Release/r_things.o $(CFLAGS)
+
+objs/Mingw/Release/am_map.o: $(GLOBALDEPS) src/am_map.c
+	$(CC) -c src/am_map.c -o objs/Mingw/Release/am_map.o $(CFLAGS)
+
+objs/Mingw/Release/command.o: $(GLOBALDEPS) src/command.c
+	$(CC) -c src/command.c -o objs/Mingw/Release/command.o $(CFLAGS)
+
+objs/Mingw/Release/console.o: $(GLOBALDEPS) src/console.c
+	$(CC) -c src/console.c -o objs/Mingw/Release/console.o $(CFLAGS)
+
+objs/Mingw/Release/dehacked.o: $(GLOBALDEPS) src/dehacked.c
+	$(CC) -c src/dehacked.c -o objs/Mingw/Release/dehacked.o $(CFLAGS)
+
+objs/Mingw/Release/Dstrings.o: $(GLOBALDEPS) src/Dstrings.c
+	$(CC) -c src/Dstrings.c -o objs/Mingw/Release/Dstrings.o $(CFLAGS)
+
+objs/Mingw/Release/F_finale.o: $(GLOBALDEPS) src/F_finale.c
+	$(CC) -c src/F_finale.c -o objs/Mingw/Release/F_finale.o $(CFLAGS)
+
+objs/Mingw/Release/F_wipe.o: $(GLOBALDEPS) src/F_wipe.c
+	$(CC) -c src/F_wipe.c -o objs/Mingw/Release/F_wipe.o $(CFLAGS)
+
+objs/Mingw/Release/g_game.o: $(GLOBALDEPS) src/g_game.c
+	$(CC) -c src/g_game.c -o objs/Mingw/Release/g_game.o $(CFLAGS)
+
+objs/Mingw/Release/g_input.o: $(GLOBALDEPS) src/g_input.c
+	$(CC) -c src/g_input.c -o objs/Mingw/Release/g_input.o $(CFLAGS)
+
+objs/Mingw/Release/hu_stuff.o: $(GLOBALDEPS) src/hu_stuff.c
+	$(CC) -c src/hu_stuff.c -o objs/Mingw/Release/hu_stuff.o $(CFLAGS)
+
+objs/Mingw/Release/i_tcp.o: $(GLOBALDEPS) src/i_tcp.c
+	$(CC) -c src/i_tcp.c -o objs/Mingw/Release/i_tcp.o $(CFLAGS)
+
+objs/Mingw/Release/info.o: $(GLOBALDEPS) src/info.c
+	$(CC) -c src/info.c -o objs/Mingw/Release/info.o $(CFLAGS)
+
+objs/Mingw/Release/md5.o: $(GLOBALDEPS) src/md5.c
+	$(CC) -c src/md5.c -o objs/Mingw/Release/md5.o $(CFLAGS)
+
+objs/Mingw/Release/mserv.o: $(GLOBALDEPS) src/mserv.c
+	$(CC) -c src/mserv.c -o objs/Mingw/Release/mserv.o $(CFLAGS)
+
+objs/Mingw/Release/s_sound.o: $(GLOBALDEPS) src/s_sound.c
+	$(CC) -c src/s_sound.c -o objs/Mingw/Release/s_sound.o $(CFLAGS)
+
+objs/Mingw/Release/screen.o: $(GLOBALDEPS) src/screen.c
+	$(CC) -c src/screen.c -o objs/Mingw/Release/screen.o $(CFLAGS)
+
+objs/Mingw/Release/sounds.o: $(GLOBALDEPS) src/sounds.c
+	$(CC) -c src/sounds.c -o objs/Mingw/Release/sounds.o $(CFLAGS)
+
+objs/Mingw/Release/st_stuff.o: $(GLOBALDEPS) src/st_stuff.c
+	$(CC) -c src/st_stuff.c -o objs/Mingw/Release/st_stuff.o $(CFLAGS)
+
+objs/Mingw/Release/tables.o: $(GLOBALDEPS) src/tables.c
+	$(CC) -c src/tables.c -o objs/Mingw/Release/tables.o $(CFLAGS)
+
+objs/Mingw/Release/v_video.o: $(GLOBALDEPS) src/v_video.c
+	$(CC) -c src/v_video.c -o objs/Mingw/Release/v_video.o $(CFLAGS)
+
+objs/Mingw/Release/w_wad.o: $(GLOBALDEPS) src/w_wad.c
+	$(CC) -c src/w_wad.c -o objs/Mingw/Release/w_wad.o $(CFLAGS)
+
+objs/Mingw/Release/Z_zone.o: $(GLOBALDEPS) src/Z_zone.c
+	$(CC) -c src/Z_zone.c -o objs/Mingw/Release/Z_zone.o $(CFLAGS)
+
+objs/Mingw/Release/vid_copy.o: $(GLOBALDEPS) src/vid_copy.s
+	$(CC) -g $(CFLAGS) -x assembler-with-cpp -c src/vid_copy.s -o $@
+
+objs/Mingw/Release/y_inter.o: $(GLOBALDEPS) src/y_inter.c
+	$(CC) -c src/y_inter.c -o objs/Mingw/Release/y_inter.o $(CFLAGS)
+
+objs/Mingw/Release/string.o: $(GLOBALDEPS) src/string.c
+	$(CC) -c src/string.c -o objs/Mingw/Release/string.o $(CFLAGS)
+
+objs/Mingw/Release/lzf.o: $(GLOBALDEPS) src/lzf.c
+	$(CC) -c src/lzf.c -o objs/Mingw/Release/lzf.o $(CFLAGS)
+
+objs/Mingw/Release/p_polyobj.o: $(GLOBALDEPS) src/p_polyobj.c
+	$(CC) -c src/p_polyobj.c -o objs/Mingw/Release/p_polyobj.o $(CFLAGS)
+
+objs/Mingw/Release/m_queue.o: $(GLOBALDEPS) src/m_queue.c
+	$(CC) -c src/m_queue.c -o objs/Mingw/Release/m_queue.o $(CFLAGS)
+
+objs/Mingw/Release/filesrch.o: $(GLOBALDEPS) src/filesrch.c
+	$(CC) -c src/filesrch.c -o objs/Mingw/Release/filesrch.o $(CFLAGS)
+
+objs/Mingw/Release/dx_error.o: $(GLOBALDEPS) src/win32/dx_error.c
+	$(CC) -c src/win32/dx_error.c -o objs/Mingw/Release/dx_error.o $(CFLAGS)
+
+objs/Mingw/Release/fabdxlib.o: $(GLOBALDEPS) src/win32/fabdxlib.c
+	$(CC) -c src/win32/fabdxlib.c -o objs/Mingw/Release/fabdxlib.o $(CFLAGS)
+
+objs/Mingw/Release/mid2strm.o: $(GLOBALDEPS) src/win32/mid2strm.c
+	$(CC) -c src/win32/mid2strm.c -o objs/Mingw/Release/mid2strm.o $(CFLAGS)
+
+objs/Mingw/Release/win_cd.o: $(GLOBALDEPS) src/win32/win_cd.c
+	$(CC) -c src/win32/win_cd.c -o objs/Mingw/Release/win_cd.o $(CFLAGS)
+
+objs/Mingw/Release/win_dbg.o: $(GLOBALDEPS) src/win32/win_dbg.c
+	$(CC) -c src/win32/win_dbg.c -o objs/Mingw/Release/win_dbg.o $(CFLAGS)
+
+objs/Mingw/Release/win_dll.o: $(GLOBALDEPS) src/win32/win_dll.c
+	$(CC) -c src/win32/win_dll.c -o objs/Mingw/Release/win_dll.o $(CFLAGS)
+
+objs/Mingw/Release/win_main.o: $(GLOBALDEPS) src/win32/win_main.c
+	$(CC) -c src/win32/win_main.c -o objs/Mingw/Release/win_main.o $(CFLAGS)
+
+objs/Mingw/Release/win_net.o: $(GLOBALDEPS) src/win32/win_net.c
+	$(CC) -c src/win32/win_net.c -o objs/Mingw/Release/win_net.o $(CFLAGS)
+
+objs/Mingw/Release/win_snd.o: $(GLOBALDEPS) src/win32/win_snd.c
+	$(CC) -c src/win32/win_snd.c -o objs/Mingw/Release/win_snd.o $(CFLAGS)
+
+objs/Mingw/Release/win_sys.o: $(GLOBALDEPS) src/win32/win_sys.c
+	$(CC) -c src/win32/win_sys.c -o objs/Mingw/Release/win_sys.o $(CFLAGS)
+
+objs/Mingw/Release/win_vid.o: $(GLOBALDEPS) src/win32/win_vid.c
+	$(CC) -c src/win32/win_vid.c -o objs/Mingw/Release/win_vid.o $(CFLAGS)
+
+objs/Mingw/Release/dosstr.o: $(GLOBALDEPS) src/sdl/dosstr.c
+	$(CC) -c src/sdl/dosstr.c -o objs/Mingw/Release/dosstr.o $(CFLAGS)
+
+objs/Mingw/Release/endtxt.o: $(GLOBALDEPS) src/sdl/endtxt.c
+	$(CC) -c src/sdl/endtxt.c -o objs/Mingw/Release/endtxt.o $(CFLAGS)
+
+objs/Mingw/Release/hwsym_sdl.o: $(GLOBALDEPS) src/sdl/hwsym_sdl.c
+	$(CC) -c src/sdl/hwsym_sdl.c -o objs/Mingw/Release/hwsym_sdl.o $(CFLAGS)
+
+objs/Mingw/Release/i_cdmus.o: $(GLOBALDEPS) src/sdl/i_cdmus.c
+	$(CC) -c src/sdl/i_cdmus.c -o objs/Mingw/Release/i_cdmus.o $(CFLAGS)
+
+objs/Mingw/Release/i_main.o: $(GLOBALDEPS) src/sdl/i_main.c
+	$(CC) -c src/sdl/i_main.c -o objs/Mingw/Release/i_main.o $(CFLAGS)
+
+objs/Mingw/Release/i_net.o: $(GLOBALDEPS) src/sdl/i_net.c
+	$(CC) -c src/sdl/i_net.c -o objs/Mingw/Release/i_net.o $(CFLAGS)
+
+objs/Mingw/Release/i_sound.o: $(GLOBALDEPS) src/sdl/i_sound.c
+	$(CC) -c src/sdl/i_sound.c -o objs/Mingw/Release/i_sound.o $(CFLAGS)
+
+objs/Mingw/Release/i_system.o: $(GLOBALDEPS) src/sdl/i_system.c
+	$(CC) -c src/sdl/i_system.c -o objs/Mingw/Release/i_system.o $(CFLAGS)
+
+objs/Mingw/Release/i_video.o: $(GLOBALDEPS) src/sdl/i_video.c
+	$(CC) -c src/sdl/i_video.c -o objs/Mingw/Release/i_video.o $(CFLAGS)
+
+objs/Mingw/Release/ogl_sdl.o: $(GLOBALDEPS) src/sdl/ogl_sdl.c
+	$(CC) -c src/sdl/ogl_sdl.c -o objs/Mingw/Release/ogl_sdl.o $(CFLAGS)
+
+objs/Mingw/Release/r_opengl.o: $(GLOBALDEPS) src/hardware/r_opengl/r_opengl.c
+	$(CC) -c src/hardware/r_opengl/r_opengl.c -o objs/Mingw/Release/r_opengl.o $(CFLAGS)
+
+objs/Mingw/Release/JB_Bot.o: $(GLOBALDEPS) src/JTE/JB_Bot.c
+	$(CC) -c src/JTE/JB_Bot.c -o objs/Mingw/Release/JB_Bot.o $(CFLAGS)
+
+objs/Mingw/Release/JB_Command.o: $(GLOBALDEPS) src/JTE/JB_Command.c
+	$(CC) -c src/JTE/JB_Command.c -o objs/Mingw/Release/JB_Command.o $(CFLAGS)
+
+objs/Mingw/Release/JB_Game.o: $(GLOBALDEPS) src/JTE/JB_Game.c
+	$(CC) -c src/JTE/JB_Game.c -o objs/Mingw/Release/JB_Game.o $(CFLAGS)
+
+objs/Mingw/Release/Rider_Info.o: $(GLOBALDEPS) src/Riders/Rider_Info.c
+	$(CC) -c src/Riders/Rider_Info.c -o objs/Mingw/Release/Rider_Info.o $(CFLAGS)
+
+objs/Mingw/Release/comptime.o: $(GLOBALDEPS) src/comptime.c
+	$(CC) -c src/comptime.c -o $@ $(CFLAGS) -DCOMPVERSION
+
+objs/Mingw/Release/Srb2Riders_private.res: objs/Mingw/Release/Srb2Riders_private.rc src/win32/Srb2win.rc 
+	$(WINDRES) --input-format=rc -o objs/Mingw/Release/Srb2Riders_private.res $(RCINCS) objs/Mingw/Release/SRB2RI~1.RC -O coff
