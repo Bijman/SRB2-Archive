@@ -1,0 +1,63 @@
+﻿Build started 05/01/2012 8:59:22 PM.
+     1>Project "C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\zlib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Users\zach\AppData\Local\Temp\3b70146e10ec4cc0981de3ae73a9979a.cmd"
+         ml.exe /c /nologo /Zi /Fo"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\inffas32.obj" /W3 /errorReport:prompt  /Ta..\..\contrib\masmx86\inffas32.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Users\zach\AppData\Local\Temp\e58327a7dfaf4dbe89b5cda2d50f9c15.cmd"
+         ml.exe /c /nologo /Zi /Fo"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\match686.obj" /W3 /errorReport:prompt  /Ta..\..\contrib\masmx86\match686.asm
+       _MASM:
+         Assembling [Inputs]...
+       _MASM:
+         Assembling [Inputs]...
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D ASMV /D ASMINF /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\\" /Fd"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\adler32.c ..\..\compress.c ..\..\crc32.c ..\..\deflate.c ..\..\gzclose.c ..\..\gzlib.c ..\..\gzread.c ..\..\gzwrite.c ..\..\infback.c ..\..\inffast.c ..\..\inflate.c ..\..\inftrees.c ..\..\trees.c ..\..\uncompr.c ..\..\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /l"0x0409" /I\Oogaland\Projects\orospakr.ca\srb2\tools\zlib\win32 /nologo /fo"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib1.res" ..\..\win32\zlib1.rc 
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib.lib" /NOLOGO /MACHINE:X86 C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib1.res
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\adler32.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\compress.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\crc32.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\deflate.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\gzclose.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\gzlib.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\gzread.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\gzwrite.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\infback.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\inffast.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\inflate.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\inftrees.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\trees.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\uncompr.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zutil.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\inffas32.obj
+         C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\match686.obj
+         zlib.vcxproj -> C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib.lib
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib.unsuccessfulbuild".
+         Touching "C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\Win32\Release\zlib.lastbuildstate".
+     1>Done Building Project "C:\Users\zach\SRB2RidersSource\libs\zlib\projects\visualc10\zlib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.32
