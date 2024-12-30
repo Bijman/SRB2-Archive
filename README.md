@@ -8,4 +8,5 @@ Here is a collection of builds that were not published or were removed via git r
 
 # List of available builds
 1. SRB2JTE (git branch: SRB2JTE),
-2. SRB2CB (git branch: SRB2CB).
+2. SRB2CB (git branch: SRB2CB),
+3. SUPERSRB2KARTZ (git branch: SUPERSRB2KARTZ).
