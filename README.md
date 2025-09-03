@@ -12,7 +12,7 @@ Here is a collection of builds that were not published or were removed via git r
 - SRB2 CS (SRB2 v2.0.6) - git branch: SRB2CS,
 - SRB2 JTE (SRB2 Final Demo v1.09.4) - git branch: SRB2JTE,
 - SRB2 MFE (SRB2 v2.0.4) - git branch: SRB2MFE,
-- SRB2 PLUS (SRB2 v2.0.7) - git branch: SRB2PLUS2.0,
+- SRB2 PLUS (SRB2 v2.0.7) - git branch: SRB2PLUS,
 - SRB2 Sonic Smash Brawl (SRB2 v2.1) - git branch: SRB2SMASHBRAWL,
 - SRB2 SPMoves (SRB2 v1.08) - git branch: SRB2SPMOVES,
 - SUPER SRB2 KART Z (SRB2 v2.0.6) - git branch: SUPERSRB2KARTZ.
