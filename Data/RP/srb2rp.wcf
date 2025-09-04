@@ -1,0 +1,385 @@
+; Defines general parameters of the game for which wadfiles are intended.
+;
+;	Name		textual name for internal use
+;	IWAD		standard 8.3 base name and extension of main wadfile
+;	NewMap		default name for new map -- dictates format for all maps
+;	Directory	directory in which main wadfile (and game files) reside
+;	Run			command to execute (from the directory) for running a map
+
+[WadGame]
+Name=SRB2RP
+IWAD=Srb2RP.wad
+NewMap=MAP01
+Directory=D:\SRB2RP
+Run=D:\SRB2RP\srb2rp.exe -iwad D:\SRB2RP\srb2rp.wad -file D:\SRB2RP\$_Wadfile -warp $_Wadmap
+
+; Defines parameters of the default sector motif created when no motif
+; file can be located at startup.
+
+[Default.Sector]
+Above=GFZROCK
+Main=GFZROCK
+Below=GFZROCK
+Ceiling=F_SKY1
+Floor=FLOOR0_6
+CeilingHeight=4096
+FloorHeight=0
+Lighting=255
+
+; Defines parameters of the default door motif created when no motif
+; file can be located at startup.
+
+[Default.Door]
+Base=GFZROCK
+Door=GFZROCK
+Track=GFZROCK
+Type=0
+
+; Defines parameters of the default stair motif created when no motif
+; file can be located at startup.
+
+[Default.Stair]
+FloorRunner=GFZROCK
+CeilingRunner=GFZROCK
+Stairwell=GFZROCK
+FloorInc=8
+CeilingInc=0
+LightingInc=0
+
+;	ID				used to classify things
+;	Flags			supplies some additional information:
+;						0    1 - indicate thing facing angle
+;	Red				red value for drawing things of said class
+;	Green			green value for drawing things of said class
+;	Blue			blue value for drawing things of said class
+;	Name			textual description of class
+
+[Things.Classes]
+0x001  1  255 255 255 Starts
+0x002  1  255 0   0   Enemies
+0x003  0  192 192 192 Scenery
+0x004  0  192 0   0   Traps
+0x005  0  0   0   255 Powerups
+0x006  0  192 192 0   Srb2RP
+0x00f  0  192 0   224 Misc.
+
+;	ID				used to uniquely identify things in a map
+;	Class			classification (defined above section)
+;	Size			approximate thing size (in map units)
+;	Sprite			name of the sprite to use for display purposes
+;	Name			textual description of thing
+
+[Things.Types]
+1       1   32  stnda1      Player 01 Start
+2       1   32  stnda1      Player 02 Start
+3       1   32  stnda1      Player 03 Start
+4       1   32  stnda1      Player 04 Start
+5       1   32  stnda1      Player 05 Start
+6       1   32  stnda1      Player 06 Start
+7       1   32  stnda1      Player 07 Start
+8       1   32  stnda1      Player 08 Start
+9       1   32  stnda1      Player 09 Start
+10      1   32  stnda1      Player 10 Start
+11      1   32  stnda1      Player 11 Start
+12      1   32  stnda1      Player 12 Start
+13      1   32  stnda1      Player 13 Start
+14      1   32  stnda1      Player 14 Start
+15      1   32  stnda1      Player 15 Start
+16      1   32  stnda1      Player 16 Start
+17      1   32  stnda1      Player 17 Start
+18      1   32  stnda1      Player 18 Start
+19      1   32  stnda1      Player 19 Start
+20      1   32  stnda1      Player 20 Start
+21      1   32  stnda1      Player 21 Start
+22      1   32  stnda1      Player 22 Start
+23      1   32  stnda1      Player 23 Start
+24      1   32  stnda1      Player 24 Start
+25      1   32  stnda1      Player 25 Start
+26      1   32  stnda1      Player 26 Start
+27      1   32  stnda1      Player 27 Start
+28      1   32  stnda1      Player 28 Start
+29      1   32  stnda1      Player 29 Start
+30      1   32  stnda1      Player 30 Start
+31      1   32  stnda1      Player 31 Start
+32      1   32  stnda1      Player 32 Start
+33      1   32  stnda1      Special Player Start
+34      16  20  dissa0      Teleport Destination
+41	6   16  com1a1      Intercom type 1
+42	6   16  com2a1      Intercom type 2
+43	6   16  com3a1      Intercom type 3
+44	6   16  com4a1      Intercom type 4
+45	6   16  com5a1      Intercom type 5
+46	6   16  com6a1      Intercom type 6
+47	6   16  com7a1      Intercom type 7
+48	6   16  com8a1      Intercom type 8
+49	6   16  com9a1      Intercom type 9
+50      3   32  fwr1a0      Flower 1
+51      3   32  fwr2a0      Flower 2
+52      3   32  fwr3a0      Flower 3
+53      3   20  fwr4a0      Flower 4
+54      3   20  fwr5a0      Flower 5
+55      3   20  bus1a0      Bush 1
+56      3   20  bus2a0      Bush 2
+57      3   20  hchna0      Hanging Chain
+58      3   20  alrma0      Ceiling Alarm
+59      3   20  dissa0      Ceiling Light
+60      3   32  garga1      Gargoyle
+61      3   20  flama0      Flame
+62      16  16  bubla0      Bubble Patch
+63      16  20  dissa0      Push
+64      16  20  dissa0      Pull
+65      4   20  cspka0      Ceiling Spike
+66      4   20  fspka0      Floor Spike
+67      4   20  spika0      Spikeball
+68      3   20  xms1a0      Xmas Pole
+69      3   20  xms3a0      Snowman
+70      3   20  xms2a0      Candy Cane
+71      3   32  dissa0      Water SFX 1A (Large)
+72      3   32  dissa0      Water SFX 1B (Large)
+73      3   32  dissa0      Water SFX 2A (Medium)
+74      3   32  dissa0      Water SFX 2B (Medium)
+75      3   32  dissa0      Water SFX 3A (Small)
+76      3   32  dissa0      Water SFX 3B (Small)
+77      3   32  dissa0      Water SFX 4A (Huge)
+78      3   32  dissa0      Water SFX 4B (Huge)
+79      16  20  stemd0      Gas Jet
+80      16  32  fansa0      Fan
+81      5   16  hunta0      Emerald Hunt Location 1
+82      5   16  hunta0      Emerald Hunt Location 2
+83      5   16  hunta0      Emerald Hunt Location 3
+84      5   32  ringa0      Ring
+85      5   32  heala0      Health up 1
+86      5   32  healc0      Health up 2
+87      5   32  heale0      Health up 3
+88      5   32  healg0      Health up 4
+89      5   32  heali0      Health up 5
+91	6   16  boata1      Boat 1
+92	6   16  boata1      Boat 2
+93	6   16  boata1      Boat 3
+94	6   16  boata1      Boat 4
+95	6   16  boata1      Boat 5
+96	6   16  boata1      Boat 6
+97	6   16  boata1      Boat 7
+98	6   16  boata1      Boat 8
+99	6   16  boata1      Boat 9
+100	6   16  boata1      Boat 10
+101	6   16  boata1      Boat 11
+102	6   16  boata1      Boat 12
+103	6   16  boata1      Boat 13
+104	6   16  boata1      Boat 14
+105	6   16  boata1      Boat 15
+106	6   16  boata1      Boat 16
+
+;	ID				used to classify linedefs
+;	Name			textual description of class
+;
+;	Note:	When converting a sector to a door, the linedef types 
+;			available are those in class number two.
+
+[LineDefs.Classes]
+0x007   DarkWorld
+0x008   Srb2RP
+0x009   Linedef Executor
+0x00a   3D Floors
+0x00b   Water
+0x00c	Scroll Effects
+0x00d   Misc.
+0x00e   Lighting
+0x00f   Pushers
+
+;	ID
+;	class
+;	codes
+;		n       does NOT require a tag number
+;		W       walk-over activation
+;		S       switch (triggered by player use)
+;		G       gunfire (pistol, shotgun, chaingun) cross or hit line
+;		1       the line may be activated once only
+;		R       potentially repeatable activation
+;		&       affected sectors locked out from further changes
+;		m       monster actions can activate the line's effect
+;	speed 
+;		(slow=1, medium = 2, fast = 3, turbo = 4)
+;	time
+;	texture changes
+;	description
+
+[LineDefs.Types]
+; Linedef Executor
+0x060    9  -       -   -   -   Trigger (Continuous)
+0x061    9  -       -   -   -   Trigger (Once per Floor Touch)
+0x062    9  -       -   -   -   Trigger (Once)
+0x065    9  -       -   -   -   Set Tagged Sector's Floor Height/Flat
+0x066    9  -       -   -   -   Set Tagged Sector's Ceiling Height/Flat
+0x067    9  -       -   -   -   Set Tagged Sector's Light Level
+0x068    9  -       -   -   -   Teleport to Tagged Sector
+0x069    9  -       -   -   -   Music Change
+0x06a    9  -       -   -   -   Move Floor by Front Sector (Length=Speed)
+0x06b    9  -       -   -   -   Move Ceiling by Front Sector (Length=Speed)
+0x06c    9  -       -   -   -   Lower Floor by Line (dx=speed, dy=amount)
+0x06d    9  -       -   -   -   Raise Floor by Line (dx=speed, dy=amount)
+0x06e    9  -       -   -   -   Lower Ceiling by Line (dx=speed, dy=amount)
+0x06f    9  -       -   -   -   Raise Ceiling by Line (dx=speed, dy=amount)
+
+; 3D Floors/Blocks
+;0x001   10  -       -   -   -   Crumbling Floating Bobbing 3D Floor (Never Reappears)
+0x022   10  -       -   -   -   Bobbing Platform (Water)
+; below was: Floating Bobbing Platform (Water)
+0x023   10  -       -   -   -   Crumbling 3D Floor (Never Reappears)
+; below was: Crumbling Platform
+0x024   10  -       -   -   -   Crumbling 3D Floor (Reappears)
+; below was: Crumbling Platform (Floats)
+0x025   10  -       -   -   -   Crumbling Floating 3D Floor (Reappears)
+0x026   10  -       -   -   -   Bobbing 3D Floor (Air)
+0x044   10  -       -   -   -   Adjustable Bobbing 3D Floor (Air)
+0x048   10  -       -   -   -   Reverse Adjustable Bobbing 3D Floor (Air)
+; below was: Bob, Crumble, Float Platform (Air)
+0x027   10  -       -   -   -   Crumbling Floating Bobbing 3D Floor (Reappears)
+; below was: Bob, Floating Platform (Air)
+0x028   10  -       -   -   -   Crumbling Bobbing 3D Floor (Air)
+0x029   10  -       -   -   -   Mario Block
+0x02a   10  -       -   -   -   Crumbling Floating 3D Floor (Never Reappears)
+0x033   10  -       -   -   -   Floor Over Floor (Solid, No Sides)
+0x02c   10  -       -   -   -   Floor Over Floor (Solid, Translucent)
+0x03e   10  -       -   -   -   Floor Over Floor (Intangible, Opaque)
+0x034   10  -       -   -   -   Floor Over Floor (Intangible, Translucent)
+0x03a   10  -       -   -   -   Floor Over Floor (Intangible, Invisible)
+0x019   10  -       -   -   -   Floor Over Floor (Solid, Opaque, Shadows)
+0x021   10  -       -   -   -   Floor Over Floor (Solid, Opaque, No Shadows)
+0x039   10  -       -   -   -   Floor Over Floor (Solid, Invisible)
+0x02f   10  -       -   -   -   Light Block
+0x031   10  -       -   -   -   Double Light Block
+0x02e   10  -       -   -   -   Fog Block
+0x035   10  -       -   -   -   Laser Block
+0x036   10  -       -   -   -   Thwomp Block
+0x037   10  -       -   -   -   Bustable Block
+0x038   10  -       -   -   -   Quicksand Block
+0x03b   10  -       -   -   -   Platform
+0x043   10  -       -   -   -   Floor Over Floor (Intangible, Sides Only)
+0x045   10  -       -   -   -   Floor Over Floor (Solid, Sides Only)
+
+; Water
+0x10e   11  -       -   -   -   Water (Old)
+0x02d   11  -       -   -   -   Water Block (Translucent)
+0x030   11  -       -   -   -   Water Block (Opaque)
+
+; Scroll Effects
+0x0ca   12  -       -   -   -   Scroll&Carry Things Sector Ceiling (FOF Conveyor)
+0x0cb   12  -       -   -   -   Carry Things on Sector Ceiling (FOF Conveyor)
+0x0d6   12  -       -   -   -   Accel Scroll Sector's Ceiling
+0x0d7   12  -       -   -   -   Accel Scroll Sector's Floor
+0x0d8   12  -       -   -   -   Accel Carry Things on Floor
+0x0d9   12  -       -   -   -   Accel Scroll Floor & Carry Things
+0x0da   12  -       -   -   -   Accel Scroll 1st Side Tagged Line
+0x0f5   12  -       -   -   -   Remote Scroll Sector's Ceiling
+0x0f6   12  -       -   -   -   Remote Scroll Sector's Floor
+0x0f7   12  -       -   -   -   Remote Carry Things on Floor
+0x0f8   12  -       -   -   -   Remote Scroll Floor & Carry Things
+0x0f9   12  -       -   -   -   Remote Scroll 1st Side Tagged Line
+0x0fa   12  -       -   -   -   Scroll Sector's Ceiling
+0x0fb   12  -       -   -   -   Scroll Sector's Floor
+0x0fc   12  -       -   -   -   Carry Things On Sector Floor
+0x0fd   12  -       -   -   -   Scroll&Carry Things Sector Floor
+0x0fe   12  -       -   -   -   Scroll First Side of Tagged Line
+0x0ff   12  -       -   -   -   Effect Scrolling From XY Offsets
+0x055   12  -       -   -   -   Scroll Wall First Side Opposite Direction
+0x064   12  -       -   -   -   Scroll Wall First Side Left
+
+; Misc. (formerly SRB2 Specials)
+0x01a   13  -       -   -   -   Instant Floor Lower
+0x018   13  -       -   -   -   Instant Ceiling Raise
+0x0df   13  -       -   -   -   Friction (Ice>100, Sludge<100)
+0x0e8   13  -       -   -   -   Floating Platform
+0x0e9   13  -       -   -   -   Floating Platform Adjustable Speed
+0x0f2   13  -       -   -   -   Fake Floor
+0x03f   13  -       -   -   -   Camera Scanner
+0x040   13  -       -   -   -   Per-Sector Gravity
+0x041   13  -       -   -   -   Speed Pad
+0x046   13  -       -   -   -   Ideya Time Modifier
+0x02b   13  -       -   -   -   Crusher 1 (Ceiling to Floor)
+0x032   13  -       -   -   -   Crusher 2 (Floor to Ceiling)
+0x047   13  -       -   -   -   Custom Exit
+
+; Lighting
+0x0d5   14  -       -   -   -   Floor Lighting
+0x105   14  -       -   -   -   Ceiling Lighting
+0x010   14  -       -   -   -   Colormap
+0x03c   14  -       -   -   -   Adjustable Pulsating Light
+0x03d   14  -       -   -   -   Adjustable Flickering Light
+
+; Pushers
+0x0e0   15  -       -   -   -   Wind Force/Direction
+0x0e1   15  -       -   -   -   Water Current Force/Direction
+0x0e2   15  -       -   -   -   Boom Push/Pull Thing
+0x0e3   15  -       -   -   -   Upwards Current
+0x0e4   15  -       -   -   -   Downwards Current
+0x0e5   15  -       -   -   -   Upwards Wind
+0x0e6   15  -       -   -   -   Downwards Wind
+
+; Dark World
+0x071    7  -       -   -   -   Linedef Executor: Dark World teleport
+
+; Srb2RP
+0x072    8  -       -   -   -   Linedef Executor: Make unpushable
+
+[Sectors.Types]
+0x001 Blink (random)
+0x002 Blink (1/2 second)
+0x003 Blink (1 second)
+0x004 Spikes
+0x005 Death Pit (no camera modifications)
+0x006 Space Countdown
+0x007 Damage (Fire)
+0x008 Light oscillates
+0x00a Instant Kill
+0x00b Damage (Non-elemental)
+0x00c Blink (1 second synch)
+0x00d Blink (1/2 second synch)
+0x00e Bouncy Sector (FOF Control Only)
+0x010 Death Pit (camera modifications)
+0x011 Light flickers like fire
+0x012 Damage (Electrical)
+0x100 Ice/Sludge
+0x200 Wind/Current
+0x2a8 Egg Capsule (Button)
+0x2a9 Egg Capsule (Top)
+0x2aa Egg Capsule (Bottom)
+0x2ab Egg Capsule (Center)
+0x2b2 Button 1 (Open Door A/700 B/701)
+0x2b3 Button 2 (Open Door A/702 B/703)
+0x2b4 Button 3 (Open Door A/704 B/705)
+0x2b5 Button 4 (Open Door A/706 B/707)
+0x2b6 Button 5 (Open Door A/708 B/709)
+0x2b7 Button 6 (Open Door A/710 B/711)
+0x2b8 Button 7 (Open Door A/712 B/713)
+0x2b9 Button 8 (Open Door A/714 B/715)
+0x2ba Button 9 (Open Door A/716 B/717)
+0x2bb Button 10 (Open Door A/718 B/719)
+0x2bc Button 11 (Open Door A/720 B/721)
+0x2bd Button 12 (Open Door A/722 B/723)
+0x2be Button 13 (Open Door A/724 B/725)
+0x2bf Button 14 (Open Door A/726 B/727)
+0x2c0 Button 15 (Open Door A/728 B/729)
+0x2c1 Button 16 (Open Door A/730 B/731)
+0x2c2 Button 17 (Open Door A/732 B/733)
+0x2c3 Button 18 (Open Door A/734 B/735)
+0x2c4 Button 19 (Open Door A/736 B/737)
+0x2c5 Button 20 (Open Door A/738 B/739)
+0x2c6 Button 21 (THZ2 A/740 B/741 D/742)
+0x300 Ice/Sludge and Wind/Current
+0x3ce Linedef Executor (No Floor Touch)
+0x3cf Linedef Executor (Floor Touch)
+0x3d0 Speed Pad (No Spin)
+0x3d1 Speed Pad (Spin)
+0x3d2 Ring Drainer
+0x3d3 Spinner
+0x3d6 Exit Sector
+0x3d7 Damage (Water)
+0x3d8 Damage (Water) and Current
+0x3d9 Conveyor Belt
+0x3da THZ2 Slime Raise (B/712 S/713 P/714 D/715 S/716)
+0x3df Custom Gravity
+0x3e0 Sticky (Stairs)
+0x3e1 Starpost Activator
+0x013 Srb2RP: Linedef Executor (Pushable)
+0x014 Srb2RP: Linedef Executor (Pushable, Floor Touch)
