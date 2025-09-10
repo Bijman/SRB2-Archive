@@ -8,8 +8,8 @@ Here is a collection of builds that were not published or were removed via git r
 
 # List of available builds
 - Sonic Smash Brawl (SRB2 v2.1) - git branch: SONICSMASHBRAWL,
-- SRB2 Community Build (SRB2 v2.0.4) - git branch: SRB2CB,
-- SRB2 Community Build PNG version (SRB2 v2.0.4) - git branch: SRB2CBPNG,
+- SRB2 Community Build (SRB2 v2.0.6) - git branch: SRB2CB,
+- SRB2 Community Build PNG Edition (SRB2 v2.0.6) - git branch: SRB2CBPNG,
 - SRB2 CS (SRB2 v2.0.6) - git branch: SRB2CS,
 - SRB2 JTE (SRB2 v1.09.4) - git branch: SRB2JTE,
 - SRB2 JTE (SRB2 v1.08 + SRB2RP + SRB2MGB2) - git branch: SRB2JTE108,
